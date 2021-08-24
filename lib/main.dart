@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'TODOアプリ',
       home: ChangeNotifierProvider<MainModel>(
-        create: (_) => MainModel()..getTodoList(),
+        create: (_) => MainModel()..getTodoListRealtime(),
         child: Scaffold(
           appBar: AppBar(
             title: Text("TODOアプリリリリ"),
